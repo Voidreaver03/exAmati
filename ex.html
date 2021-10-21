@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Ex Amati
+        </title>
+        <style>
+            table,
+        td,
+        th{
+            border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            ex Amati
+        </h1>
+        <br>
+        <table id="tab">
+            <tr><th>
+                    Numero
+            </th></tr>
+        </table>
+        <input type="number" id="num1">
+        <button id="btn1">
+            add
+        </button>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $("#btn1").click(function(){
+                var n1= parseInt($("#num1").val())
+                var string=
+                    "<tr><td>"+ n1 + "</td></tr>"
+                    $("#tab").append(string)
+            })
+        </script>
+    </body>
+</html>
